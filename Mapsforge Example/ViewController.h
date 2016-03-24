@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+#import "IOSMapView.h"
 
+@interface ViewController : UIViewController {
+    IOSMapView *mapView;
+}
+
+@property (nonatomic,retain) IBOutlet IOSMapView *mapView;
 
 @end
 
